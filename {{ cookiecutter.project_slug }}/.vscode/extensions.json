@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "eamodio.gitlens",
+        "njpwerner.autodocstring",
+        "batisteo.vscode-django",
+        "kevinrose.vsc-python-indent",
+        "matangover.mypy",
+        "mikestead.dotenv",
+        "ms-python.python",
+        "ms-python.flake8",
+        "ms-python.isort",
+        "ms-python.vscode-pylance"
+    ]
+}
