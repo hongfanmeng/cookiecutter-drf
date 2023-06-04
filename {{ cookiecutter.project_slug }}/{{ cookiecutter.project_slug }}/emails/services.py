@@ -6,8 +6,8 @@ from django.db import transaction
 from django.db.models.query import QuerySet
 from django.utils import timezone
 
+from {{ cookiecutter.project_slug }}.common.exceptions import ApplicationError
 from {{ cookiecutter.project_slug }}.common.services import model_update
-from {{ cookiecutter.project_slug }}.core.exceptions import ApplicationError
 from {{ cookiecutter.project_slug }}.emails.models import Email
 from {{ cookiecutter.project_slug }}.emails.tasks import email_send as email_send_task
 

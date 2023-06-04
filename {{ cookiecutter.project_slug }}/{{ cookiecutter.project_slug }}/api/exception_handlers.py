@@ -6,7 +6,7 @@ from rest_framework.response import Response
 from rest_framework.serializers import as_serializer_error
 from rest_framework.views import exception_handler
 
-from {{ cookiecutter.project_slug }}.core.exceptions import ApplicationError
+from {{ cookiecutter.project_slug }}.common.exceptions import ApplicationError
 
 
 def drf_default_with_modifications_exception_handler(exc, ctx):
