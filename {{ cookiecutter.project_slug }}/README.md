@@ -1,3 +1,11 @@
-# Django Styleguide Example
+# {{cookiecutter.project_name}}
 
-Fork from https://github.com/HackSoftware/Django-Styleguide-Example, changed some code to make the project more suitable for your own use
+{{ cookiecutter.description }}
+
+[![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
+{%- if cookiecutter.open_source_license != "Not open source" %}
+
+License: {{cookiecutter.open_source_license}}
+{%- endif %}
+

@@ -33,13 +33,12 @@ def email_send(email: Email) -> Email:
             raise ApplicationError("Email sending failure triggered.")
 
     subject = email.subject
-    from_email = "styleguide-example@hacksoft.io"
     to = email.to
 
     html = email.html
     plain_text = email.plain_text
 
-    msg = EmailMultiAlternatives(subject, plain_text, from_email, [to])
+    msg = EmailMultiAlternatives(subject, plain_text, [to])
     msg.attach_alternative(html, "text/html")
 
     msg.send()
